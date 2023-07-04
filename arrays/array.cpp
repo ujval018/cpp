@@ -5,7 +5,7 @@ using namespace std;
 int main(){
           int A[5];
 
-          cout<<"enter array "<<endl;
+          cout<<"enter array:- "<<endl;
           for (int i = 0; i < 5; i++)
           {
             cin>>A[i];
