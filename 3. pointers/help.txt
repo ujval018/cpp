@@ -1,0 +1,6 @@
+//pointers
+
+##On the basics of what a varibale is storing we define it in two types
+        1) data variable 
+        2) address variable 
+        
