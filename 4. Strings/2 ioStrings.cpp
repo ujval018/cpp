@@ -6,7 +6,7 @@ int main(){
 
   char str[100];
   cout<<"what's your name?"<<endl;
-  cin.get(str,100);
+  cin.get(str,100);//if we just take cin>>str; it will print first word only
   cout<<"welcome to code world "<<str<<endl;
   cin.ignore();//or just use getline function
 
