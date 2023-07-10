@@ -1,0 +1,9 @@
+_______________________________________________________________________________________STRINGS__________________________________________________________________________________
+|   #String is an array of characters that can be used to store words sentences 
+            "\0" is used to terminate string ---also called delminator ----also holds space in array
+
+            EXAMPLE :-
+                      char str[6]={'h','e','l','l','o','\0'};
+                      char str[6]="Ujval"; //this way \0 automatically be entered in the array ---literal
+                      char str[]="hello"; // literal
+                      char *str="hello";
