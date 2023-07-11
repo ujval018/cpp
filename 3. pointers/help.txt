@@ -1,40 +1,42 @@
-//pointers
-
-##On the basics of what a varibale is storing we define it in two types
-        1) data variable (stores data)
-        2) address variable (stores address)
-
-                  int a=9;//data is initialised
-                  int *p1;//pointer is declared 
-                  p1= &a;//pointer is intialised and address of a is stored 
-  
-
-        #Dereferencing :- pointing to the data whose address is being stored [*p1]
-        cout<<p1; result:address of a
-        cout<<*p1; result: 9
-___________________________________________________________________________STACK AND HEAP____________________________________________________________________________
+______________________________________________________________________________//pointers//__________________________________________________________________________________
+|
+|##On the basics of what a varibale is storing we define it in two types
+|        1) data variable (stores data)
+|        2) address variable (stores address)
+|
+|                  int a=9;//data is initialised
+|                  int *p1;//pointer is declared 
+|                  p1= &a;//pointer is intialised and address of a is stored 
+|  
+|
+|        #Dereferencing :- pointing to the data whose address is being stored [*p1]
+|        cout<<p1; result:address of a
+|        cout<<*p1; result: 9
+|___________________________________________________________________________STACK AND HEAP____________________________________________________________________________
 |#stack & heap
 |        $stack is the memory where code creates memory for all the variables ^memory space cannot be changed - it is temporary -stores untill function is in call
-|        $heap is also a memory section kind of permanent where memory can be created dynamically for variables as per need of code- memory is stored untill deleted |"permanent type"
-----------------------------------------------------------------------------_//ALLOCATION IN HEAP// _---------------------------------------------------------------------
+|        $heap is also a memory section kind of permanent where memory can be created dynamically for variables as per need of code- memory is stored untill deleted 
+|        "permanent type"
+|----------------------------------------------------------------------------_//ALLOCATION IN HEAP// _---------------------------------------------------------------------
 |                  int A[3]={1,2,3};// this way stored in stack
 |
-|                 int *p1;//declariton of pointer 
+|                int *p1;//declariton of pointer 
 |                  //this way stored in heap
 |                  p1=new int[5];//allocation heap using "new" 
 |                  // also a way
-|                  int *p2=new int[5];//declariton and allocation of pointer 
-------------------------------------------------------------------------_//errors in using pointers//_--------------------------------------------------------------------
+|                 int *p2=new int[5];//declariton and allocation of pointer 
+|------------------------------------------------------------------------_//errors in using pointers//_--------------------------------------------------------------------
 |                  Memory Leak: deallocation should be done:--- delete []p; 
-                   danagling pointer:--- pointer pointing on empty memory ..should bedone  p=nullptr;
-
----------------------------------------------------------------------------------_//Reference//_-------------------------------------------------------------------------
-
-                        ! it is just a nickname to the same variable;;;;
-                                                        int x;
-                                                        int &y=x;
-
-
-
-
-        
+|                   danagling pointer:--- pointer pointing on empty memory ..should bedone  p=nullptr;
+|
+|---------------------------------------------------------------------------------_//Reference//_-------------------------------------------------------------------------
+|
+|                        ! it is just a nickname to the same variable;;;;
+|                                                        int x;
+|                                                        int &y=x;
+|
+|
+|
+|
+|        
+|
