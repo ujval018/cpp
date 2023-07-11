@@ -1,9 +1,42 @@
-_______________________________________________________________________________________STRINGS__________________________________________________________________________________
+_______________________________________________________________________________________STRINGS_______________________________________________________________________________
 |   #String is an array of characters that can be used to store words sentences 
-            "\0" is used to terminate string ---also called delminator ----also holds space in array
-
-            EXAMPLE :-
-                      char str[6]={'h','e','l','l','o','\0'};
-                      char str[6]="Ujval"; //this way \0 automatically be entered in the array ---literal
-                      char str[]="hello"; // literal
-                      char *str="hello";
+|            "\0" is used to terminate string ---also called delamination ----also holds space in array
+|
+|            EXAMPLE:-
+|                      char str[6]={'h','e','l','l','o','\0'};
+|                      char str[6]="Ujval"; //this way \0 automatically be entered in the array ---literal
+|                      char str[]="hello"; // literal
+|                      char *str="hello";
+|---------------------------------------------------------------------------------//Input_output//---------------------------------------------------------------------------
+|                         We can take input by
+|                        initialising it first as array then 
+|                        taking string input 
+|                                                example:--
+|                                                            char str[100];
+|                                                            cin>>str; // it will only print first word i.e. before \n
+|
+|                                                            so we can use
+|                                                            cin.get(str,100); //this function if string input required one time in program else  
+|                                                            vrna use cin.ignore() function 
+|
+|                                                            cin.getline(str,100);
+|
+|                                                            
+|                                                                                    
+|-----------------------------------------------------------------------//Functions in cstring_string.h//-------------------------------------------------------------------
+|
+|        #include<cstring>
+|                                1) strlen(str); //this gives the length of the stored string
+|                                2) strcat(destination string, source string) // this grouos two string together 
+|                                        strncat(destination string, source string, length)//this says the length to be cat
+|                                3) strcpy(a,b) //this copies string  from b to a string
+|                                        strncpy(a,b,n) // length how much copy sholud be done
+|                                4) strstr(str1,str2)//find string str2 in str1 
+|                                5) strchar(str1,'?')//finds character in string 
+|                                        strrchar //this searches from right side 
+|                                6) strcmp(s1,s2) //strcmp(s1,s2) this compares two string acc to order
+|                                7) strtol(string,NULL,size) //converts string to long int type
+|                                8) strtof(string,NULL) //converts string to float
+|                                9) strtok(s1,"charc") //tokenise the charc in s1 string
+|
+|
