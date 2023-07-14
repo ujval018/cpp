@@ -1,74 +1,74 @@
-==========================================================================================STRING===========================================================================|
-|   #String is an array of characters that can be used to store words sentences                                                                                            |           
-|            "\0" is used to terminate string ---also called delamination ----also holds space in array                                                                    |         
-|                                                                                                                                                                          |                     
-|            EXAMPLE:-                                                                                                                                                     |            
-|                      char str[6]={'h','e','l','l','o','\0'};                                                                                                             |                     
-|                      char str[6]="Ujval"; //this way \0 automatically be entered in the array ---literal                                                                 |      
-|                      char str[]="hello"; // literal                                                                                                                      |             
-|                      char *str="hello";                                                                                                                                  |                                      
-|---------------------------------------------------------------------------------//Input_output//-------------------------------------------------------------------------|                               
-|                         We can take input by                                                                                                                             |                    
-|                        initialising it first as array then                                                                                                               |                                                                    
-|                        taking string input                                                                                                                               |                                            
-|                                                example:--                                                                                                                |                                                              
-|                                                            char str[100];                                                                                                |                                                                                      
-|                                                            cin>>str; // it will only print first word i.e. before \n                                                     |                                                        
-|                                                                                                                                                                          |                                                                                                                          
-|                                                            so we can use                                                                                                 |                                                  
-|                                                            cin.get(str,100); //this function if string input required one time in program else                           |                                                                    
-|                                                            vrna use cin.ignore() function                                                                                |                                                  
-|                                                                                                                                                                          |                                                        
-|                                                            cin.getline(str,100);                                                                                         |                                                                                                  
-|                                                                                                                                                                          |                                                                                            
-|                                                                                                                                                                          |                                                                                                              
-|                                                                                                                                                                          |                                                                                            
-|-----------------------------------------------------------------------//Functions in cstring_string.h//------------------------------------------------------------------|                                                                                                                    
-|                                                                                                                                                                          |                                                              
-|        #include<cstring>                                                                                                                                                 |                                
-|                                1) strlen(str); //this gives the length of the stored string                                                                              |                                                                          
-|                                2) strcat(destination string, source string) // this grouos two string together                                                           |                                                                          
-|                                        strncat(destination string, source string, length)//this says the length to be cat                                                |                                                                          
-|                                3) strcpy(a,b) //this copies string  from b to a string                                                                                   |                                                                                            
-|                                        strncpy(a,b,n) // length how much copy sholud be done                                                                             |                                                                                
-|                                4) strstr(str1,str2)//find string str2 in str1                                                                                            |                                                                                
-|                                5) strchar(str1,'?')//finds character in string                                                                                           |                                                                          
-|                                        strrchar //this searches from right side                                                                                          |                                                              
-|                                6) strcmp(s1,s2) //strcmp(s1,s2) this compares two string acc to order                                                                    |                                                                                            
-|                                7) strtol(string,NULL,size) //converts string to long int type                                                                            |              
-|                                8) strtof(string,NULL) //converts string to float                                                                                         |                                                                                                                                                                    
-|                                9) strtok(s1,"charc") //tokenise the charc in s1 string                                                                                   |                                                                                                                                                                          
-|                                                                                                                                                                          |                                                                                      
-|__________________________________________________________________________________________________________________________________________________________________________|                                                                                                                                                                                                                                                                 
-===================================================================================//STRING_CLASS//========================================================================|                                                                                                                                                                                                                                                              
-|      #include<string>                                                                                                                                                    |                                                                                                        
-|                          basic                                                                                                                                           |                                                                                                                    
-|                                "#include <string>                                                                                                                        |                                                                                                                                      
-|                                string str;"                                                                                                                              |                                                                                                                                
-|                                this creates an array for string here we call object to the variables and size is automatically allocated and is always grreater          |                                                                                                                                                                                                                                                        
-|                                                                                                                                                                          |                                                                                      
-|------------------------------------------------------------------------------.function()in string class------------------------------------------------------------------|                                                                                                                                                                                                                                                            
-|                                                                                                                                                                          |                                                                                                                    
-|                                1) str.length //this gives the size of str object                                                                                         |                                                                                                                                                                    
-|                                2) str.size //sametosame                                                                                                                  |                                                                                                                                            
-|                                3) str.capacity() //this gives the total capacity of current object                                                                       |                                                                                                                                                                                      
-|                                4) str.resize(n) //this resizes the boject size                                                                                           |                                                                                                                                                                    
-|                                5) str.max_size() //this give the possible max size of object in compiler possible                                                        |                                                                                                                                                                                                        
-|                                6) str.clear() //this cleans the object                                                                                                   |                                                                                                                                                              
-|                                7) str.empty() //this checks weather the object is empty?                                                                                 |                                                                                                                                                                                
-|                                8) str.append("word") //this adds words to the pre existing string                                                                        |                                                                                                                                                                                      
-|                                9) str.insert(n,"word") //this inserts word in between string at n                                                                        |                                                                                                                                                                                      
-|                                10) str.replace(n,m,"word") //this replaces the n on onwards string upto m with  word                                                     |                                                                                                                                                                                                        
-|                                11) str.erase //erases the string                                                                                                         |                                                                                                                                                        
-|                                12) str.push_back('w') //adds one char at thr rnd of string                                                                               |                                                                                                                                                                                
-|                                13) str.pop_back() //removes from the last                                                                                                |                                                                                                                                                              
-|                                14) str.swap(str2) //swaps str1 to str2                                                                                                   |                                                                                                                                                              
-|                                15) str.copy(char,des[])                                                                                                                  |                                                                                                                                            
-|                                16) str.find(string/char)                                                                                                                 |                                                                                                                                            
-|                                17) str.rfind(string/char)                                                                                                                |                                                                                                                                            
-|                                18) str.find_first_if()                                                                                                                   |                                                                                                                                            
-|                                19) str.find_last_of                                                                                                                      |                                                                                                                                      
-|                                20) str.substr(start,n)                                                                                                                   |                                                                                                                                            
-|                                21) str.compare(string)                                                                                                                   |                                                                                                                                            
-|__________________________________________________________________________________________________________________________________________________________________________| **************************************************************************************************************************************************************************** 
+==========================================================================================STRING============================================================================
+|   #String is an array of characters that can be used to store words sentences 
+|            "\0" is used to terminate string ---also called delamination ----also holds space in array
+|
+|            EXAMPLE:-
+|                      char str[6]={'h','e','l','l','o','\0'};
+|                      char str[6]="Ujval"; //this way \0 automatically be entered in the array ---literal
+|                      char str[]="hello"; // literal
+|                      char *str="hello";
+|---------------------------------------------------------------------------------//Input_output//---------------------------------------------------------------------------
+|                         We can take input by
+|                        initialising it first as array then 
+|                        taking string input 
+|                                                example:--
+|                                                            char str[100];
+|                                                            cin>>str; // it will only print first word i.e. before \n
+|
+|                                                            so we can use
+|                                                            cin.get(str,100); //this function if string input required one time in program else  
+|                                                            vrna use cin.ignore() function 
+|
+|                                                            cin.getline(str,100);
+|
+|                                                            
+|                                                                                    
+|-----------------------------------------------------------------------//Functions in cstring_string.h//-------------------------------------------------------------------
+|
+|        #include<cstring>
+|                                1) strlen(str); //this gives the length of the stored string
+|                                2) strcat(destination string, source string) // this grouos two string together 
+|                                        strncat(destination string, source string, length)//this says the length to be cat
+|                                3) strcpy(a,b) //this copies string  from b to a string
+|                                        strncpy(a,b,n) // length how much copy sholud be done
+|                                4) strstr(str1,str2)//find string str2 in str1 
+|                                5) strchar(str1,'?')//finds character in string 
+|                                        strrchar //this searches from right side 
+|                                6) strcmp(s1,s2) //strcmp(s1,s2) this compares two string acc to order
+|                                7) strtol(string,NULL,size) //converts string to long int type
+|                                8) strtof(string,NULL) //converts string to float
+|                                9) strtok(s1,"charc") //tokenise the charc in s1 string
+|
+|_____________________________________________________________________________________________________________________________________________________________________________
+|===================================================================================//STRING_CLASS//========================================================================
+|      #include<string>
+|                          basic 
+|                                "#include <string>
+|                                string str;"
+|                                this creates an array for string here we call object to the variables and size is automatically allocated and is always grreater 
+|
+|------------------------------------------------------------------------------.function()in string class--------------------------------------------------------------------
+|                                
+|                                1) str.length //this gives the size of str object
+|                                2) str.size //sametosame
+|                                3) str.capacity() //this gives the total capacity of current object
+|                                4) str.resize(n) //this resizes the boject size
+|                                5) str.max_size() //this give the possible max size of object in compiler possible
+|                                6) str.clear() //this cleans the object
+|                                7) str.empty() //this checks weather the object is empty?
+|                                8) str.append("word") //this adds words to the pre existing string 
+|                                9) str.insert(n,"word") //this inserts word in between string at n 
+|                                10) str.replace(n,m,"word") //this replaces the n on onwards string upto m with  word
+|                                11) str.erase //erases the string 
+|                                12) str.push_back('w') //adds one char at thr rnd of string 
+|                                13) str.pop_back() //removes from the last
+|                                14) str.swap(str2) //swaps str1 to str2 
+|                                15) str.copy(char,des[]) 
+|                                16) str.find(string/char)
+|                                17) str.rfind(string/char)
+|                                18) str.find_first_if()
+|                                19) str.find_last_of
+|                                20) str.substr(start,n)
+|                                21) str.compare(string)
+|___________________________________________________________________________________________________________________________________________________________________________                                                                                                                                                     **************************************************************************************************************************************************************************** 
 ~~iterator acts as a pointer to the element in container                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
