@@ -26,5 +26,9 @@ int main (){
   cout<<s1.substr(3)<<endl;
   cout<<s1.substr(3,4)<<endl;
 
+  string s5="apple";
+  string s4="dog";
+  cout<<s4.compare(s5);
+
   return 0;
 }
