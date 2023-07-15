@@ -1,0 +1,17 @@
+*****************************************************************************************************************
+---------------------------------------------//FUNCTIONS\\-------------------------------------------------------
+_________________________________________________________________________________________________________________
+
+#It is a peice of program code which performs specific task for given parameters and returns results
+#can take more then one or 0 input parameters
+#returns single value 
+#naming same as variables 
+    !it's code is stored in code section
+    !the variables are created in stack and deleted asap after the return;
+            Example:-
+                void printfun(){
+                    cout<<"hello world";
+                }
+                int main(){
+                    printfun();                
+                }
