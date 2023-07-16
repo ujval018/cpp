@@ -18,3 +18,34 @@ ________________________________________________________________________________
 ////////////////////////////////////////////[OVERLOADING]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
         @@two functions cam have same name but there parameters should be different 
         @@Two functions with same name and parameters are same even if there return type is different
+///////////////////////////////////////////// TEMPLATE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        @@this is used to simplify our work
+        if there is two same parameter entry we can use it 
+                                template<class T>
+                                //write a Max() function template for 2 numbers
+                                T Max(T x, T y){
+                                    if (x>y){
+                                        return x;
+                                    }else {
+                                    return y;
+
+                                    }
+                                }
+
+                                void Main()
+                                {
+                                    cout<<Max(10,5)<<endl;
+                                    cout<<Max(12.5f,17.3f);
+                                }
+//////////////////////////////////////////////[default functions]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+^^ we can combine more than two overloaded functions in one..
+    just by declaring variables to a default value
+            int add_fun(int x=0, int y=0, int z=0){
+                return x+y+z;
+            }
+            int main(){
+                cout<<add_fun(2,3,4)<<endl;
+                cout<<add_fun(2,3)<<endl;
+                cout<<add_fun(2)<<endl;
+                cout<<add_fun()<<endl;
+            }
