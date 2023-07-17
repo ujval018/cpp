@@ -53,14 +53,28 @@ ________________________________________________________________________________
     ^^There are 3 types by which we can pass the parameter in the FUNCTIONS
             1)pass by value
                             :-here we give specific value to the parameters
-                                    cout<<fun(x,y);
+                                    int fun(int a, int b){//code}
+                                    int main(){
+                                    cout<<fun(x,y);}
                                      the values of action parameters are just copied from the action parameter
                                      it does not effect the value of action parameter only will change formal
                                      parameter.
             2)pass by address
                             :-here we give address of the action parameter and store in it pointers
-                                    cout<<fun(&x,&y);
+                                    int fun(int *a, int *b){//code}
+                                    int main(){
+                                    cout<<fun(&x,&y);}
                                      the address of action parameter is stored in the formal parameter initialised
                                      as pointers
                                      and is printed using derefrencing formal parameter
             3)pass by refrence 
+                            :-here we make function parameters the refrence of the action parameter
+                                    int fun(int &a,int &b){//code}
+                                    int main(){
+                                    cout<<fun(x,y);}
+                                     the action parameters and formal parameters are the same with just two different
+                                     name--- here no new loaction is assigned 
+                                     function is written in main function while call
+//////////////////////////////////////////////[return by address]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+^^this tells us that a function can also return address to a pointer only if stored inn heap memory 
+ 
