@@ -77,4 +77,54 @@ ________________________________________________________________________________
                                      function is written in main function while call
 //////////////////////////////////////////////[return by address]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 ^^this tells us that a function can also return address to a pointer only if stored inn heap memory 
- 
+///////////////////////////////////////////////////[VARIABLES]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    There are three types of variables 
+                                :-
+                                    1) Local variables:- only accessible by the function where initialised it
+                                                         deleted once function ends 
+                                                         stored in stack
+                                    2) Global variables:-accessibleby all the functions in the code 
+                                                         initialised out of functions
+                                                         deleted when program ends
+                                                         stored in code section 
+                                    3) Static variable:- only accessible by the function where initialised it
+                                                         deleted when program ends
+                                                         stored in code section
+                                                         static int v=5;
+//////////////////////////////////////////////////[RECURSION]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    Function which calls itself is called recursive function 
+    ex:- 
+            int fun(){
+                fun(para);
+            }
+            int main(){
+                fun();
+            }
+//////////////////////////////////////////////[pointer function]\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+we can assign pointer to a function 
+and also reassign the functions to it (polymorph) if the signature is same
+            ex:---------------------------
+            void display(){
+                cout<<"hello"
+            }
+            int main(){
+                void (*pf)();
+                pf=display;
+            }
+            ex:---------------------------
+                int max(int x, int y){
+                    return x>y?x:y;
+                }
+                int min(int x, int y){
+                    return x<y?x:y;
+                }
+            int main(){
+                int (*pf)(int , int);
+                pf=max;
+                cout<<(*pf)(10,5)<<endl;
+                pf=min;
+                cout<<(*pf)(2,7)<<endl;
+
+            }
+__________________________________________________________________________________________________________________
+*******************************************************************************************************************
