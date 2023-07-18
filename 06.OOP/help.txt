@@ -1,0 +1,18 @@
+*****************************************************************************************************************
+-----------------------------------------------------//OOPS\\----------------------------------------------------
+_________________________________________________________________________________________________________________
+This is a method of writing program.
+This makes programming or devlopment very much systematic and organised for engineers
+---------------------------------------------[principles of oop]--------------------------------------------------
+There are four principles:-
+                1) Abstraction:- This gives or layout the plan of writing the program without giving much details 
+                                 to the user. This just allows to access and use the functions only present inside
+                                 the object we write the code inside the class (hiding complex working)
+                2) Encapsulation:-This refers to the bundling of data and finctions into one unit in order to hide
+                                 the working(exposing neccesary interface)
+                3) Inheritance:- This refers to building a new class that is a subset of exsisting class i.e the new
+                                 class has the features of pre-existing class along with new features
+                4) polymorphisim:-This refers to treating two objects of different class as if they are same
+---------------------------------------------[Class and Object]--------------------------------------------------
+CLASS:- it is the blueprint or the classification of objects (group of object)
+Object:-it is the instance of the class which holds the properties to perform functions
