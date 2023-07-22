@@ -24,9 +24,9 @@ class nano:public Car{
     }
 };
 int main (){
-    gtr ujval;
-    ujval.start();
-    nano manas;
-    manas.stop();
+    Car *ujval=new gtr();
+    ujval->start();
+    Car *manas=new nano();
+    manas->stop();
     return 0;
 }
